@@ -1,0 +1,58 @@
+.heading_area{
+    .heading{
+        h2{
+            font-weight: 700;
+            font-size: 40px;
+            @include sm{
+                font-size: 28px;
+            }
+            color: #000;
+            position: relative;
+            padding-bottom: 20px;
+            &::after{
+                content: "";
+                border-radius: 10px;
+                width: 392px;
+                @include sm{
+                    width: 350px;
+                }
+                height: 5px;
+                position: absolute;
+                bottom: 0px;
+                background: #f4ae39;
+                left: 50%;
+                @include transformX(-50%);
+                
+            }
+        }
+        &.style_1{
+            h2{
+                &::after{
+                    left: 0px;
+                    @include transformX(0%);
+                    width: 217px;
+
+                }
+            }
+        }
+    }
+    .description{
+        p{
+            font-weight: 400;
+            font-size: 16px;
+            text-align: center;
+            color: #000;
+            margin-top: 10px;
+        }
+    }
+    &.style_1{
+        h2{
+            font-size: 28px;
+            padding-bottom: 15px;
+
+        }
+        p{
+            text-align: left;
+        }
+    }
+}

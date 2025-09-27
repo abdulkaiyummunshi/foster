@@ -1,0 +1,144 @@
+.support_area{
+    margin-top: 150px;
+    padding-bottom: 69px;
+    background: #fefcf7;
+    .support_sidebar{
+        padding-top: 60px;
+        @include md{
+            margin-bottom: 30px;
+        }
+        @include sm{
+            margin-bottom: 30px;
+        }
+        h4{
+            font-weight: 700;
+            font-size: 30px;
+            color: #000;
+        }
+        ul{
+            margin-top: 20px;
+            li{
+                font-weight: 700;
+                font-size: 18px;
+                color: #000;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .faq_area{
+        border: 1px solid rgba(0, 0, 0, 0.36);
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+        padding: 66px 43px 50px 84px;
+        @include nesthubmax{
+            padding: 50px;
+        }
+        @include nesthub{
+            padding: 40px;
+        }
+        @include md{
+            padding: 40px;
+        }
+        @include sm{
+            padding: 20px;
+        }
+        background-color: #fff;
+    }
+    .faq_title{
+        h2{
+            font-weight: 700;
+            font-size: 36px;
+            @include sm{
+                font-size: 28px;
+            }
+            color: #000;
+            margin-bottom: 20px;
+        }
+    }
+    .sub_title{
+        h4{
+            font-weight: 700;
+            font-size: 24px;
+            color: #000;
+        }
+    }
+    .faq_container {
+    max-width: 800px;
+    margin: 50px auto;
+    @include nesthub{
+        margin: 30px 0px;
+    }
+    @include sm{
+        margin: 20px 0px;
+    }
+    font-family: sans-serif;
+    .faq_item {
+        border: 1px solid rgba(0, 0, 0, 0.61);
+        border-radius: 20px;
+        width: 100%;
+        padding: 50px 40px;
+        margin-bottom: 30px;
+        @include nesthub{
+            padding: 40px;
+        }
+        @include md{
+            padding: 30px ;
+        }
+        @include sm{
+            padding: 20px;
+        }
+
+        .faq_question {
+            cursor: pointer;
+            position: relative;
+            margin: 0;
+            user-select: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 700;
+            font-size: 22px;
+            @include sm{
+                font-size: 18px;
+            }
+            color: #000;
+
+            &:after {
+                content: '\f107'; 
+                font-size: 1em;
+                font-family: 'Fontawesome';
+                transition: transform 0.3s ease-in-out;
+            }
+
+            &.active:after {
+                transform: rotate(180deg); 
+            }
+        }
+
+        .faq_answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+            ul{
+                li{
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: #000;
+                }
+            }
+        }
+
+        .faq_answer.collapsed {
+            max-height: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        .faq_answer.expanded {
+            max-height: 500px; 
+            padding-top: 20px;
+        }
+    }
+}
+}

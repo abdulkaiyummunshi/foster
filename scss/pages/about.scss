@@ -1,0 +1,433 @@
+.fosterer_section_area{
+    margin-top: 150px;
+    @include nesthubmax{
+        margin-top: 120px;
+    }
+    @include nesthub{
+        margin-top: 110px;
+    }
+    @include md{
+        margin-top: 90px;
+    }
+    @include sm{
+        margin-top: 75px;
+    }
+    .fosterer_contains{
+        max-width: 520px;
+        width: 100%;
+        @include md{
+            max-width: 100%;
+        }
+        p{
+            strong{
+                font-weight: 700;
+                font-size: 60px;
+                @include sm{
+                    font-size: 40px;
+                }
+                color: #fab23a;
+            }
+            font-weight: 500;
+            font-size: 16px;
+            color: #000;
+            line-height: 20px;
+        }
+    }
+    .fosterer_img{
+        @include sm{
+            margin-top: 30px;
+        }
+        @include md{
+            margin-top: 30px;
+        }
+        max-width: 455px;
+        height: 455px;
+        border-radius: 0 100px;
+        @include sm{
+            max-width: 100%;
+            height: 300px;
+        }
+        img{
+            border: 1px solid #d4d4d4;
+            border-radius: 0 100px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        box-shadow: 10px 11px 4px 0 #00c4b4;
+        &.style_1{
+            box-shadow: 10px 11px 4px 0 #fab23a;
+        }
+    }
+}
+.why_fosterer_stands{
+    margin-top: 150px;
+    @include nesthubmax{
+        margin-top: 120px;
+    }
+    @include nesthub{
+        margin-top: 110px;
+    }
+    @include md{
+        margin-top: 90px;
+    }
+    @include sm{
+        margin-top: 75px;
+    }
+    .mt-60{
+        margin-top: 60px;
+    }
+    .row{
+        &.style_1{
+            @include md{
+                gap: 48px;
+
+            }
+            @include sm{
+                gap: 30px;
+            }
+
+        }
+    }
+}
+.fosterr_card{
+    height: 100%;
+    @include flex(row, center, center);
+}
+.fosterer_stands_card{
+    border: 1px solid #c5c5c5;
+    max-width: 407px;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    padding: 73px 25px 20px 34px;
+    @include nesthub{
+        padding: 73px 15px 20px 15px;
+    }
+    position: relative;
+    h4{
+        font-weight: 700;
+        font-size: 22px;
+        color: #000;
+    }
+    p{
+        font-weight: 400;
+        font-size: 16px;
+        color: #000;
+        margin-top: 10px;
+    }
+    ul{
+        padding-left: 20px;
+        margin-top: 14px;
+        li{
+            list-style-type: disc;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: #000;
+        }
+    }
+    .card_number{
+        position: absolute;
+        top: -38px;
+        height: fit-content;
+        left: 50%;
+        @include transformX(-50%);
+        span{
+            line-height: 74px;
+            font-weight: 700;
+            font-size: 100px;
+
+            background: linear-gradient(180deg, #000 20.68%, #fab23a 55.78%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+        }
+    }
+}
+
+
+.benefit_area{
+    .benifit_card_area{
+        @include md{
+            margin-top: 40px;
+        }
+    }
+    overflow: hidden;
+    @include md{
+        padding: 0px 20px;
+    }
+    .row{
+        &.style_1{
+            margin-top: 30px;
+        }
+    }
+    margin-top: 150px;
+    @include nesthubmax{
+        margin-top: 120px;
+    }
+    @include nesthub{
+        margin-top: 110px;
+    }
+    @include md{
+        margin-top: 90px;
+    }
+    @include sm{
+        margin-top: 75px;
+    }
+    .benefit_img{
+        padding-right: 60px;
+        @include nesthubmax{
+            padding-right: 0px;
+        }
+        @include nesthub{
+            padding-right: 0px;
+        }
+        @include md{
+            padding-right: 0px;
+        }
+            width: 100%;
+            height: 557px;
+            @include sm{
+                height: 280px;
+            }
+            img{
+                width: 100%;
+                @include md{
+                    border-radius: 10px;
+                    -webkit-border-radius: 10px;
+                    -moz-border-radius: 10px;
+                    -ms-border-radius: 10px;
+                    -o-border-radius: 10px;
+}
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    .benefit_card{
+        padding: 10px 20px;
+        @include flex(row, space-between, center);
+        gap: 20px;
+        border: 1px solid #c5c5c5;
+        max-width: 586px;
+        width: 100%;
+        @include sm{
+            padding-right: 10px;
+        }
+        
+        .card_details{
+            h4{
+                font-weight: 700;
+                font-size: 22px;
+                @include sm{
+                    font-size: 18px;
+                }
+                color: #000;
+            }
+            p{
+                font-weight: 400;
+                font-size: 16px;
+
+                color: #000;
+            }
+        }
+    }
+}
+
+
+.success_stories_area{
+    margin-top: 150px;
+    @include nesthubmax{
+        margin-top: 120px;
+    }
+    @include nesthub{
+        margin-top: 110px;
+    }
+    @include md{
+        margin-top: 90px;
+    }
+    @include sm{
+        margin-top: 75px;
+    }
+    .row{
+        &.style_1{
+            margin-top: 30px;
+        }
+    }
+}
+.success_stories_card{
+    border: 0.96px solid #c5c5c5;
+    width:100%;
+    background-color: #fff;
+    height: 100%;
+    .success_stories_img{
+        width: 100%;
+        height: 208px;
+        overflow: hidden;
+        cursor: pointer;
+        img{
+            width: 100%;
+            height: 100%;
+            @include transition(0.4s);
+            object-fit: cover;
+        }
+        &:hover{
+            img{
+                transform: scale(1.05);
+                -webkit-transform: scale(1.05);
+                -moz-transform: scale(1.05);
+                -ms-transform: scale(1.05);
+                -o-transform: scale(1.05);
+}
+        }
+    }
+    .success_card_contains{
+        padding: 18px 32px 28px 32px;
+        @include sm{
+            padding: 10px 16px 24px 16px;
+        }
+        h4{
+            a{
+                font-weight: 700;
+            font-size: 21px;
+            color: #000;
+            @include transition(0.4s);
+            &:hover{
+                color: #fab23a;
+            }
+            }
+        }
+        p{
+            font-weight: 400;
+            font-size: 15px;
+            color: #000;
+            margin-top: 6px;
+        }
+        .btn_wrapper{
+            margin-top: 27px;
+            a{
+                padding: 11px 36px;
+                background-color: #00c4b4;
+                font-weight: 700;
+                font-size: 16px;
+                @include transition(0.4s);
+                color: #fff;
+                &:hover{
+                    background-color: #00c4b4b5;
+                }
+            }
+        }
+    }
+}
+
+.involved_area{
+    &.style_1{
+        background: #fefcf7;
+    }
+    .col-lg-4{
+        @include md{
+        &.style_1{
+            justify-content: center !important;
+            display: flex;
+        }
+        }
+    }
+    .line_shape{
+        position: absolute;
+        top: 50%;
+        @include transformY(-50%);
+        right: -28px;
+        @include nesthubmax{
+            width: 77px;
+            height: 27px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        @media (max-width: 1024px){
+            display: none;
+        }
+    }
+    .line_shape1{
+        position: absolute;
+        top: 50%;
+        @include transformY(-50%);
+        left: -28px;
+        @include nesthubmax{
+            width: 77px;
+            height: 27px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        @media (max-width: 1024px){
+            display: none;
+        }
+
+    }
+    .row{
+        &.style_1{
+            margin-top: 24px;
+        }
+    }
+    margin-bottom: 200px;
+    margin-top: 150px;
+    @include nesthubmax{
+        margin-top: 120px;
+    }
+    @include nesthub{
+        margin-top: 110px;
+    }
+    @include md{
+        margin-top: 90px;
+    }
+    @include sm{
+        margin-top: 75px;
+    }
+    
+    .involved_card_wrapper{
+        position: relative;
+        padding-top: 43px;
+        height: 100% !important;
+        
+        .card_icon{
+            position: absolute;
+            top: 0px;
+            left: 38px;
+            &.style_1{
+                top: 10px;
+            }
+        }
+        .involved_card{
+            border: 1px solid #c5c5c5;
+            max-width: 316px;
+            width: 100%;
+            height: 100%;
+            padding: 46px 38px 46px 38px;
+            h4{
+                font-weight: 700;
+                font-size: 22px;
+                color: #000;
+            }
+            p{
+                font-weight: 400;
+                font-size: 16px;
+                color: #000;
+            }
+        }
+        &.style_1{
+            background-color: #fff;
+
+            height: 100%;
+            .card_icon{
+                top: 11px;
+            }
+            
+        }
+    }
+}
