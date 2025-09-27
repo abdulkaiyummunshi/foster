@@ -185,21 +185,49 @@ p {
       box-shadow: 10px 11px 4px 0 #fab23a; }
 
 .why_fosterer_stands {
-  margin-top: 150px; }
+  position: relative;
+  padding-top: 150px;
+  margin-top: 20px; }
+  .why_fosterer_stands .vector {
+    position: absolute;
+    left: 0px;
+    top: 0px; }
+    @media only screen and (min-width: 992px) and (max-width: 1024px) {
+      .why_fosterer_stands .vector img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; } }
+    @media only screen and (max-width: 991px) {
+      .why_fosterer_stands .vector {
+        width: 200px;
+        height: 300px;
+        left: -20px; }
+        .why_fosterer_stands .vector img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain; } }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .why_fosterer_stands .vector {
+        width: 100px;
+        height: 200px; }
+        .why_fosterer_stands .vector img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain; } }
   @media only screen and (min-width: 1025px) and (max-width: 1280px) {
     .why_fosterer_stands {
-      margin-top: 120px; } }
+      padding-top: 120px; } }
   @media only screen and (min-width: 992px) and (max-width: 1024px) {
     .why_fosterer_stands {
-      margin-top: 110px; } }
+      padding-top: 110px; } }
   @media only screen and (max-width: 991px) {
     .why_fosterer_stands {
-      margin-top: 90px; } }
+      padding-top: 90px; } }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     .why_fosterer_stands {
-      margin-top: 75px; } }
+      padding-top: 75px; } }
   .why_fosterer_stands .mt-60 {
-    margin-top: 60px; }
+    padding-top: 60px; }
   @media only screen and (max-width: 991px) {
     .why_fosterer_stands .row.style_1 {
       gap: 48px; } }
@@ -263,8 +291,17 @@ p {
       -webkit-text-fill-color: transparent; }
 
 .benefit_area {
+  position: relative;
   overflow: hidden;
   margin-top: 150px; }
+  .benefit_area .vector {
+    position: absolute;
+    bottom: 0px;
+    right: 0px; }
+    .benefit_area .vector .vector1 {
+      position: absolute;
+      bottom: 0px;
+      right: 0px; }
   @media only screen and (max-width: 991px) {
     .benefit_area .benifit_card_area {
       margin-top: 40px; } }
@@ -314,6 +351,9 @@ p {
           -o-border-radius: 10px; } }
   .benefit_area .benefit_card {
     padding: 10px 20px;
+    background-color: white;
+    z-index: 10;
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -702,5 +742,392 @@ p {
     @media only screen and (min-width: 0px) and (max-width: 767px) {
       .campaign_organizers .heading_area.style_2 {
         padding-left: 0px; } }
+
+.tk_advocacy_area {
+  margin-top: 150px; }
+  .tk_advocacy_area .tk_advocacy_card {
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 4px 4px 0 #fab23a;
+    background: #fff;
+    height: 100%; }
+    .tk_advocacy_area .tk_advocacy_card .card_image {
+      border-radius: 5px;
+      width: 100%;
+      height: 232px;
+      position: relative; }
+      .tk_advocacy_area .tk_advocacy_card .card_image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px; }
+      .tk_advocacy_area .tk_advocacy_card .card_image .tk_advocacy_folder {
+        position: absolute;
+        bottom: -25px;
+        left: 30px; }
+        .tk_advocacy_area .tk_advocacy_card .card_image .tk_advocacy_folder .tk_folder {
+          width: 51px;
+          height: 51px;
+          border-radius: 50%;
+          -moz-border-radius: 50%;
+          -webkit-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%;
+          background-color: white;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center; }
+          .tk_advocacy_area .tk_advocacy_card .card_image .tk_advocacy_folder .tk_folder .tk_text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%); }
+            .tk_advocacy_area .tk_advocacy_card .card_image .tk_advocacy_folder .tk_folder .tk_text img {
+              width: 45px;
+              height: 45px;
+              object-fit: contain; }
+          .tk_advocacy_area .tk_advocacy_card .card_image .tk_advocacy_folder .tk_folder .tk_folder_card {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%); }
+            .tk_advocacy_area .tk_advocacy_card .card_image .tk_advocacy_folder .tk_folder .tk_folder_card img {
+              width: 23px;
+              height: 23px;
+              object-fit: contain; }
+    .tk_advocacy_area .tk_advocacy_card .card_body {
+      padding: 30px 20px; }
+      .tk_advocacy_area .tk_advocacy_card .card_body h2 {
+        font-weight: 700;
+        font-size: 18px;
+        color: #000; }
+      .tk_advocacy_area .tk_advocacy_card .card_body .describtion {
+        margin-top: 11px; }
+        .tk_advocacy_area .tk_advocacy_card .card_body .describtion p {
+          font-weight: 400;
+          font-size: 14px;
+          color: rgba(0, 0, 0, 0.65); }
+      .tk_advocacy_area .tk_advocacy_card .card_body .price_card .raised {
+        margin-top: 6px;
+        font-weight: 400;
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.65); }
+      .tk_advocacy_area .tk_advocacy_card .card_body .tk_price {
+        margin-top: 14px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center; }
+        .tk_advocacy_area .tk_advocacy_card .card_body .tk_price h4 {
+          font-weight: 700;
+          font-size: 28px;
+          color: #000; }
+        .tk_advocacy_area .tk_advocacy_card .card_body .tk_price p {
+          font-weight: 400;
+          font-size: 12px;
+          color: rgba(0, 0, 0, 0.65); }
+      .tk_advocacy_area .tk_advocacy_card .card_body .tk_line {
+        margin-top: 6px;
+        border: 1px solid rgba(211, 211, 211, 0.7);
+        border-radius: 100px;
+        width: 100%;
+        height: 6px;
+        background: rgba(217, 217, 217, 0.3); }
+        .tk_advocacy_area .tk_advocacy_card .card_body .tk_line .border_line {
+          border-radius: 100px;
+          width: 237px;
+          background: linear-gradient(90deg, #fff 0%, #fab23a 100%);
+          height: 4px; }
+      .tk_advocacy_area .tk_advocacy_card .card_body .tk_card_footer {
+        margin-top: 16px;
+        border-top: 1px solid rgba(0, 0, 0, 0.4);
+        padding-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center; }
+        .tk_advocacy_area .tk_advocacy_card .card_body .tk_card_footer .foster_by {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+          gap: 5px; }
+          .tk_advocacy_area .tk_advocacy_card .card_body .tk_card_footer .foster_by h4 {
+            font-weight: 700;
+            font-size: 18px;
+            color: #000; }
+            .tk_advocacy_area .tk_advocacy_card .card_body .tk_card_footer .foster_by h4 span {
+              font-weight: 400;
+              font-size: 14px;
+              color: rgba(0, 0, 0, 0.65); }
+        .tk_advocacy_area .tk_advocacy_card .card_body .tk_card_footer .no_deadline {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+          gap: 5px; }
+          .tk_advocacy_area .tk_advocacy_card .card_body .tk_card_footer .no_deadline p {
+            font-weight: 400;
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.65); }
+
+.tk_sign_up_area {
+  margin-top: 150px; }
+  .tk_sign_up_area .tk_sign_up {
+    border: 1px solid rgba(0, 0, 0, 0.36);
+    border-radius: 40px;
+    max-width: 581px;
+    width: 100%;
+    height: 100%;
+    padding: 35px 45px;
+    text-align: center; }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .tk_sign_up_area .tk_sign_up {
+        padding: 30px 20px; } }
+  .tk_sign_up_area .logo a {
+    padding: 10px;
+    background-color: #fab23a;
+    height: 39px;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px; }
+  .tk_sign_up_area .tk_heading {
+    margin-top: 20px; }
+    .tk_sign_up_area .tk_heading h2 {
+      font-weight: 700;
+      font-size: 48px;
+      color: #000; }
+      @media only screen and (min-width: 0px) and (max-width: 767px) {
+        .tk_sign_up_area .tk_heading h2 {
+          font-size: 30px; } }
+  .tk_sign_up_area .description {
+    margin-top: 10px; }
+    .tk_sign_up_area .description P {
+      font-weight: 400;
+      font-size: 16px;
+      color: #000; }
+      .tk_sign_up_area .description P a {
+        font-weight: 700;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: #fab23a; }
+        .tk_sign_up_area .description P a:hover {
+          color: #fab43ac4; }
+  .tk_sign_up_area .tk_sign_up_google {
+    border: 1px solid rgba(0, 0, 0, 0.36);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    padding: 10px 0px;
+    margin-top: 14px;
+    gap: 10px; }
+    .tk_sign_up_area .tk_sign_up_google .tk_google_icon {
+      width: 34px;
+      height: 34px; }
+      @media only screen and (min-width: 0px) and (max-width: 767px) {
+        .tk_sign_up_area .tk_sign_up_google .tk_google_icon {
+          font-size: 20px;
+          height: 20px;
+          margin-bottom: 10px; } }
+      .tk_sign_up_area .tk_sign_up_google .tk_google_icon img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; }
+    .tk_sign_up_area .tk_sign_up_google h5 a {
+      font-size: 20px;
+      font-weight: 900;
+      color: #000;
+      transition: all 0.4s ease; }
+      @media only screen and (min-width: 0px) and (max-width: 767px) {
+        .tk_sign_up_area .tk_sign_up_google h5 a {
+          font-size: 18px;
+          font-weight: 500; } }
+      .tk_sign_up_area .tk_sign_up_google h5 a:hover {
+        color: #fab23a; }
+  .tk_sign_up_area .mb_or_connect {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 19px 0px 24px 0px; }
+    .tk_sign_up_area .mb_or_connect::before, .tk_sign_up_area .mb_or_connect::after {
+      content: '';
+      flex: 1;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+    .tk_sign_up_area .mb_or_connect .mb_or_text {
+      padding: 0 15px;
+      font-weight: 400;
+      font-size: 16px;
+      color: #111; }
+  .tk_sign_up_area .input_area {
+    width: 100%; }
+    .tk_sign_up_area .input_area input {
+      width: 100%;
+      border: 1px solid rgba(0, 0, 0, 0.4);
+      background-color: #fff;
+      padding: 20px 20px;
+      margin-bottom: 13px;
+      outline: none; }
+      @media only screen and (min-width: 0px) and (max-width: 767px) {
+        .tk_sign_up_area .input_area input {
+          padding: 10px; } }
+    .tk_sign_up_area .input_area select {
+      width: 100%;
+      padding: 20px;
+      outline: none;
+      border: 1px solid rgba(0, 0, 0, 0.4); }
+      @media only screen and (min-width: 0px) and (max-width: 767px) {
+        .tk_sign_up_area .input_area select {
+          padding: 10px; } }
+      .tk_sign_up_area .input_area select::before {
+        color: #fab23a; }
+      .tk_sign_up_area .input_area select::after {
+        color: #fab23a; }
+  .tk_sign_up_area .checkbox {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px; }
+    .tk_sign_up_area .checkbox input {
+      width: fit-content;
+      margin: 0px;
+      margin-top: 6px; }
+    .tk_sign_up_area .checkbox p {
+      font-weight: 400;
+      font-size: 16px;
+      color: rgba(0, 0, 0, 0.6);
+      text-align: left; }
+      .tk_sign_up_area .checkbox p a {
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: #fab23a;
+        transition: all 0.4s ease; }
+        .tk_sign_up_area .checkbox p a:hover {
+          color: #fab43acd; }
+  .tk_sign_up_area .btn_wrapper_tk {
+    margin-top: 20px; }
+    .tk_sign_up_area .btn_wrapper_tk button {
+      border-radius: 100px;
+      border: none;
+      width: 100%;
+      height: 68px;
+      background: #00c4b4;
+      font-weight: 700;
+      font-size: 26px;
+      color: #fff;
+      transition: all 0.4s ease; }
+      @media only screen and (min-width: 0px) and (max-width: 767px) {
+        .tk_sign_up_area .btn_wrapper_tk button {
+          font-size: 20px;
+          height: 40px;
+          font-size: 20px;
+          font-weight: 500; } }
+      .tk_sign_up_area .btn_wrapper_tk button:hover {
+        background-color: #00c4b4cd; }
+  .tk_sign_up_area .checkbox_forget {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    .tk_sign_up_area .checkbox_forget .forget_pass a {
+      font-weight: 400;
+      font-size: 12px;
+      transition: all 0.4s ease;
+      color: #fab23a; }
+      .tk_sign_up_area .checkbox_forget .forget_pass a:hover {
+        color: #fab43ac6; }
+  .tk_sign_up_area .recapcha {
+    margin-top: 10px; }
+    .tk_sign_up_area .recapcha p {
+      text-align: center;
+      font-weight: 400;
+      font-size: 12px;
+      color: rgba(0, 0, 0, 0.6); }
+      .tk_sign_up_area .recapcha p a {
+        font-weight: 700;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: #fab23a;
+        transition: all 0.4s ease; }
+        .tk_sign_up_area .recapcha p a:hover {
+          color: #fab43ac4; }
+
+.tk_blog_area {
+  margin-top: 150px; }
+  .tk_blog_area .tk_blog_card {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 4px 51px 0 rgba(0, 0, 0, 0.25);
+    background: #fff; }
+    .tk_blog_area .tk_blog_card .img_area {
+      width: 100%;
+      height: 265px; }
+      .tk_blog_area .tk_blog_card .img_area img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .tk_blog_area .tk_blog_card .tk_blog_card_body {
+      padding: 10px 30px 40px 30px; }
+      .tk_blog_area .tk_blog_card .tk_blog_card_body .tk_meta_info a {
+        font-weight: 400;
+        font-size: 15px;
+        color: #d28300;
+        transition: all 0.4s ease; }
+        .tk_blog_area .tk_blog_card .tk_blog_card_body .tk_meta_info a:nth-child(1) {
+          padding-right: 6px; }
+        .tk_blog_area .tk_blog_card .tk_blog_card_body .tk_meta_info a:hover {
+          color: #d28200cf; }
+      .tk_blog_area .tk_blog_card .tk_blog_card_body .tk_card_title {
+        margin-top: 17px; }
+        .tk_blog_area .tk_blog_card .tk_blog_card_body .tk_card_title h2 {
+          line-height: 24px; }
+          .tk_blog_area .tk_blog_card .tk_blog_card_body .tk_card_title h2 a {
+            font-weight: 600;
+            font-size: 24px;
+            color: #000;
+            transition: all 0.4s ease; }
+            .tk_blog_area .tk_blog_card .tk_blog_card_body .tk_card_title h2 a:hover {
+              color: #d28300; }
+      .tk_blog_area .tk_blog_card .tk_blog_card_body .tk_description {
+        margin-top: 16px; }
+        .tk_blog_area .tk_blog_card .tk_blog_card_body .tk_description p {
+          font-weight: 400;
+          font-size: 16px;
+          color: rgba(0, 0, 0, 0.6); }
+      .tk_blog_area .tk_blog_card .tk_blog_card_body .btn_wrapper_blog {
+        margin-top: 29px; }
+        .tk_blog_area .tk_blog_card .tk_blog_card_body .btn_wrapper_blog a {
+          border-radius: 5px;
+          padding: 12px 30px;
+          background: #00c4b4;
+          font-weight: 500;
+          font-size: 14px;
+          color: #fff;
+          transition: all 0.4s ease; }
+          .tk_blog_area .tk_blog_card .tk_blog_card_body .btn_wrapper_blog a:hover {
+            background-color: #00c4b4d4; }
 
 /*# sourceMappingURL=style.css.map */

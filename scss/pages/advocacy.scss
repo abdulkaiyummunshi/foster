@@ -1,0 +1,365 @@
+.tk_advocacy_area{
+    margin-top: 150px;
+    .tk_advocacy_card{
+        border-radius: 10px;
+        width: 100%;
+        box-shadow: 0 4px 4px 0 #fab23a;
+        background: #fff;
+        height: 100%;
+        .card_image{
+            border-radius: 5px;
+            width: 100%;
+            height: 232px;
+            position: relative;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                @include border-radius(5px);
+            }
+            .tk_advocacy_folder{
+                position: absolute;
+                bottom: -25px;
+                left: 30px;
+                .tk_folder{
+                    width: 51px;
+                    height: 51px;
+                    @include border-radius(50%);
+                    background-color: white;
+                    @include flex(row, center, center);
+                    .tk_text{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        @include transform(-50%, -50%);
+                        img{
+                            width: 45px;
+                            height: 45px;
+                            object-fit: contain;
+                        }
+                    }
+                    .tk_folder_card{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        @include transform(-50%, -50%);
+                        
+                        img{
+                            width: 23px;
+                            height: 23px;
+                            object-fit: contain;
+                        }
+                    }
+                }
+            }
+        }
+        .card_body{
+            padding: 30px 20px;
+            h2{
+                font-weight: 700;
+                font-size: 18px;
+                color: #000;
+            }
+            .describtion{
+                margin-top: 11px;
+                p{
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: rgba(0, 0, 0, 0.65);
+                }
+            }
+            .price_card{
+                .raised{
+                    margin-top: 6px;
+                    font-weight: 400;
+                    font-size: 12px;
+                    color: rgba(0, 0, 0, 0.65);
+                }
+            }
+            .tk_price{
+                margin-top: 14px;
+                @include flex(row, space-between, center);
+                h4{
+                    font-weight: 700;
+                    font-size: 28px;
+                    color: #000;
+                }
+                p{
+                    font-weight: 400;
+                    font-size: 12px;
+                    color: rgba(0, 0, 0, 0.65);
+                }
+            }
+            .tk_line{
+                margin-top: 6px;
+                border: 1px solid rgba(211, 211, 211, 0.7);
+                border-radius: 100px;
+                width: 100%;
+                height: 6px;
+                background: rgba(217, 217, 217, 0.3);
+                .border_line{
+                    border-radius: 100px;
+                    width: 237px;
+                    background: linear-gradient(90deg, #fff 0%, #fab23a 100%);
+                    height: 4px;
+                }
+            }
+            .tk_card_footer{
+                margin-top: 16px;
+                border-top: 1px solid rgba(0, 0, 0, 0.4);
+                padding-top: 20px;
+                @include flex(row, space-between, center);
+                .foster_by{
+                    @include flex(row, flex-start, center);
+                    gap: 5px;
+                    h4{
+                        font-weight: 700;
+                        font-size: 18px;
+                        color: #000;
+                        span{
+                            font-weight: 400;
+                            font-size: 14px;
+                            color: rgba(0, 0, 0, 0.65);
+                        }
+                    }
+                }
+                .no_deadline{
+                    @include flex(row, flex-start, center);
+                    gap: 5px;
+                    p{
+                        font-weight: 400;
+                        font-size: 14px;
+                        color: rgba(0, 0, 0, 0.65);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.tk_sign_up_area{
+    margin-top: 150px;
+    .tk_sign_up{
+        border: 1px solid rgba(0, 0, 0, 0.36);
+        border-radius: 40px;
+        max-width: 581px;
+        width: 100%;
+        height: 100%;
+        padding: 35px 45px;
+        @include sm{
+            padding: 30px 20px;
+        }
+        text-align: center;
+    }
+    .logo{
+        a{
+            padding: 10px;
+            background-color: #fab23a;
+            height: 39px;
+            @include border-radius(6px);
+        }
+    }
+    .tk_heading{
+        margin-top: 20px;
+        h2{
+            font-weight: 700;
+            font-size: 48px;
+            @include sm{
+                font-size: 30px;
+            }
+            color: #000;
+        }
+    }
+    .description{
+        margin-top: 10px;
+        P{
+            font-weight: 400;
+            font-size: 16px;
+            color: #000;
+
+            a{
+                font-weight: 700;
+                text-decoration: underline;
+                text-decoration-skip-ink: none;
+                color: #fab23a;
+                &:hover{
+                    color: #fab43ac4;
+                }
+            }
+        }
+    }
+    .tk_sign_up_google{
+        border: 1px solid rgba(0, 0, 0, 0.36);
+        @include flex(row, center, center);
+        @include border-radius(30px);
+        padding: 10px 0px;
+        margin-top: 14px;
+        gap: 10px;
+        .tk_google_icon{
+            width: 34px;
+            height: 34px;
+            @include sm{
+                font-size: 20px;
+                height: 20px;
+                margin-bottom: 10px;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        h5{
+            a{
+                font-size: 20px;
+                font-weight: 900;
+                @include sm{
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+                color: #000;
+                @include transition(0.4s);
+                &:hover{
+                    color: #fab23a;
+                }
+            }
+
+        }
+    }
+    .mb_or_connect {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 19px 0px 24px 0px;
+            
+    &::before,
+    &::after {
+        content: '';
+        flex: 1;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    }
+    
+    .mb_or_text {
+        padding: 0 15px;
+        font-weight: 400;
+        font-size: 16px;
+        color: #111;
+    }
+}
+.input_area{
+    width: 100%;
+
+    input{
+        width: 100%;
+        border: 1px solid rgba(0, 0, 0, 0.4);
+        
+        background-color: #fff;
+        padding: 20px 20px;
+        margin-bottom: 13px;
+        @include sm{
+            padding: 10px;
+        }
+        outline: none;
+    }
+    select{
+        width: 100%;
+        padding: 20px;
+        @include sm{
+            padding: 10px;
+        }
+        outline: none;
+        border: 1px solid rgba(0, 0, 0, 0.4);
+        &::before{
+            color: #fab23a;
+        }
+        &::after{
+            color: #fab23a;
+        }
+    }
+}
+.checkbox{
+    margin-top: 10px;
+    input{
+        width: fit-content;
+        margin: 0px;
+        margin-top: 6px;
+
+    }
+    @include flex(row, flex-start, flex-start);
+    gap: 10px;
+    p{
+        font-weight: 400;
+        font-size: 16px;
+        color: rgba(0, 0, 0, 0.6);
+        text-align: left;
+        a{
+            text-decoration: underline;
+            text-decoration-skip-ink: none;
+            color: #fab23a;
+            @include transition(0.4s);
+            &:hover{
+                color: #fab43acd;
+            }
+        }
+    }
+}
+.btn_wrapper_tk{
+    margin-top: 20px;
+    button{
+        border-radius: 100px;
+        border: none;
+        width: 100%;
+        height: 68px;
+        background: #00c4b4;
+        font-weight: 700;
+        font-size: 26px;
+        @include sm{
+            font-size: 20px;
+            height: 40px;
+            font-size: 20px;
+            font-weight: 500;
+
+        }
+        color: #fff;
+        @include transition(0.4s);
+        &:hover{
+            background-color: #00c4b4cd;
+        }
+
+    }
+}
+.checkbox_forget{
+    @include flex(row, space-between, center);
+    .forget_pass{
+        a{
+            font-weight: 400;
+            font-size: 12px;
+            @include transition(0.4s);
+            color: #fab23a;
+            &:hover{
+                color: #fab43ac6;
+            }
+        }
+    }
+}
+.recapcha{
+    margin-top: 10px;
+    p{
+        text-align: center;
+        font-weight: 400;
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.6);
+        a{
+            font-weight: 700;
+            text-decoration: underline;
+            text-decoration-skip-ink: none;
+            color: #fab23a;
+            @include transition(0.4s);
+            &:hover{
+                color: #fab43ac4;
+            }
+        }
+    }
+}
+
+}
