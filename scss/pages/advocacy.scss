@@ -16,6 +16,7 @@
                 height: 100%;
                 object-fit: cover;
                 @include border-radius(5px);
+                @include transition(0.4s);
             }
             .tk_advocacy_folder{
                 position: absolute;
