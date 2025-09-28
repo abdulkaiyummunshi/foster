@@ -111,16 +111,16 @@
         padding-top: 60px;
     }
     .row{
-        &.style_1{
-            @include md{
-                gap: 48px;
+        // &.style_1{
+        //     @include md{
+        //         gap: 48px;
 
-            }
-            @include sm{
-                gap: 30px;
-            }
+        //     }
+        //     @include sm{
+        //         gap: 30px;
+        //     }
 
-        }
+        // }
     }
 }
 .fosterr_card{
@@ -194,6 +194,12 @@
         }
     }
     .benifit_card_area{
+        @include nesthubmax{
+            margin-right: 40px;
+        }
+        @include nesthub{
+            margin-right: 40px;
+        }
         @include md{
             margin-top: 40px;
         }
@@ -223,10 +229,17 @@
     .benefit_img{
         padding-right: 60px;
         @include nesthubmax{
+            // padding-left: 30px;
             padding-right: 0px;
+            img{
+                object-fit: contain !important;
+            }
         }
         @include nesthub{
             padding-right: 0px;
+            img{
+                object-fit: contain !important;
+            }
         }
         @include md{
             padding-right: 0px;
@@ -371,6 +384,15 @@
 .involved_area{
     &.style_1{
         background: #fefcf7;
+        .row{
+            &.style_1{
+                .col-lg-3{
+                    @include sm{
+                        @include flex(row, center, center);
+                    }
+                }
+            }
+        }
     }
     .col-lg-4{
         @include md{
@@ -422,19 +444,19 @@
             margin-top: 24px;
         }
     }
-    margin-bottom: 200px;
-    margin-top: 150px;
+    padding-bottom: 200px;
+    padding-top: 150px;
     @include nesthubmax{
-        margin-top: 120px;
+        padding-top: 120px;
     }
     @include nesthub{
-        margin-top: 110px;
+        padding-top: 110px;
     }
     @include md{
-        margin-top: 90px;
+        padding-top: 90px;
     }
     @include sm{
-        margin-top: 75px;
+        padding-top: 75px;
     }
     
     .involved_card_wrapper{
@@ -453,6 +475,7 @@
         .involved_card{
             border: 1px solid #c5c5c5;
             max-width: 316px;
+            background-color: #fff;
             width: 100%;
             height: 100%;
             padding: 46px 38px 46px 38px;
@@ -468,7 +491,7 @@
             }
         }
         &.style_1{
-            background-color: #fff;
+            // background-color: #fff;
 
             height: 100%;
             .card_icon{

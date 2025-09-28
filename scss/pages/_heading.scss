@@ -4,7 +4,7 @@
             font-weight: 700;
             font-size: 40px;
             @include sm{
-                font-size: 28px;
+                font-size: 23px;
             }
             color: #000;
             position: relative;
@@ -48,6 +48,9 @@
     &.style_1{
         h2{
             font-size: 28px;
+            @include sm{
+                font-size: 22px;
+            }
             padding-bottom: 15px;
 
         }

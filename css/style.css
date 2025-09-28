@@ -70,13 +70,13 @@ p {
     font-size: 36px;
     margin-top: 30px;
     color: #000; }
-    @media (max-width: 767px) {
-      .terms_area h4 {
-        font-size: 24px;
-        margin-top: 15px; } }
     @media (max-width: 998px) {
       .terms_area h4 {
         font-size: 30px;
+        margin-top: 15px; } }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .terms_area h4 {
+        font-size: 22px;
         margin-top: 15px; } }
   .terms_area h5 {
     font-weight: 700;
@@ -228,12 +228,6 @@ p {
       padding-top: 75px; } }
   .why_fosterer_stands .mt-60 {
     padding-top: 60px; }
-  @media only screen and (max-width: 991px) {
-    .why_fosterer_stands .row.style_1 {
-      gap: 48px; } }
-  @media only screen and (min-width: 0px) and (max-width: 767px) {
-    .why_fosterer_stands .row.style_1 {
-      gap: 30px; } }
 
 .fosterr_card {
   height: 100%;
@@ -302,6 +296,12 @@ p {
       position: absolute;
       bottom: 0px;
       right: 0px; }
+  @media only screen and (min-width: 1025px) and (max-width: 1280px) {
+    .benefit_area .benifit_card_area {
+      margin-right: 40px; } }
+  @media only screen and (min-width: 992px) and (max-width: 1024px) {
+    .benefit_area .benifit_card_area {
+      margin-right: 40px; } }
   @media only screen and (max-width: 991px) {
     .benefit_area .benifit_card_area {
       margin-top: 40px; } }
@@ -328,10 +328,14 @@ p {
     height: 557px; }
     @media only screen and (min-width: 1025px) and (max-width: 1280px) {
       .benefit_area .benefit_img {
-        padding-right: 0px; } }
+        padding-right: 0px; }
+        .benefit_area .benefit_img img {
+          object-fit: contain !important; } }
     @media only screen and (min-width: 992px) and (max-width: 1024px) {
       .benefit_area .benefit_img {
-        padding-right: 0px; } }
+        padding-right: 0px; }
+        .benefit_area .benefit_img img {
+          object-fit: contain !important; } }
     @media only screen and (max-width: 991px) {
       .benefit_area .benefit_img {
         padding-right: 0px; } }
@@ -445,10 +449,16 @@ p {
           background-color: #00c4b4b5; }
 
 .involved_area {
-  margin-bottom: 200px;
-  margin-top: 150px; }
+  padding-bottom: 200px;
+  padding-top: 150px; }
   .involved_area.style_1 {
     background: #fefcf7; }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .involved_area.style_1 .row.style_1 .col-lg-3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; } }
   @media only screen and (max-width: 991px) {
     .involved_area .col-lg-4.style_1 {
       justify-content: center !important;
@@ -497,16 +507,16 @@ p {
     margin-top: 24px; }
   @media only screen and (min-width: 1025px) and (max-width: 1280px) {
     .involved_area {
-      margin-top: 120px; } }
+      padding-top: 120px; } }
   @media only screen and (min-width: 992px) and (max-width: 1024px) {
     .involved_area {
-      margin-top: 110px; } }
+      padding-top: 110px; } }
   @media only screen and (max-width: 991px) {
     .involved_area {
-      margin-top: 90px; } }
+      padding-top: 90px; } }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     .involved_area {
-      margin-top: 75px; } }
+      padding-top: 75px; } }
   .involved_area .involved_card_wrapper {
     position: relative;
     padding-top: 43px;
@@ -520,6 +530,7 @@ p {
     .involved_area .involved_card_wrapper .involved_card {
       border: 1px solid #c5c5c5;
       max-width: 316px;
+      background-color: #fff;
       width: 100%;
       height: 100%;
       padding: 46px 38px 46px 38px; }
@@ -532,7 +543,6 @@ p {
         font-size: 16px;
         color: #000; }
     .involved_area .involved_card_wrapper.style_1 {
-      background-color: #fff;
       height: 100%; }
       .involved_area .involved_card_wrapper.style_1 .card_icon {
         top: 11px; }
@@ -545,7 +555,7 @@ p {
   padding-bottom: 20px; }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     .heading_area .heading h2 {
-      font-size: 28px; } }
+      font-size: 23px; } }
   .heading_area .heading h2::after {
     content: "";
     border-radius: 10px;
@@ -580,6 +590,9 @@ p {
 .heading_area.style_1 h2 {
   font-size: 28px;
   padding-bottom: 15px; }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .heading_area.style_1 h2 {
+      font-size: 22px; } }
 .heading_area.style_1 p {
   text-align: left; }
 
@@ -700,8 +713,94 @@ p {
         padding-top: 20px; }
 
 .campaign_organizers {
+  background: #fefcf7;
+  position: relative;
   padding-top: 150px;
   background: #fefcf7; }
+  .campaign_organizers .shape1 {
+    position: absolute;
+    left: 0px;
+    top: 50px; }
+    @media only screen and (max-width: 991px) {
+      .campaign_organizers .shape1 {
+        width: 400px;
+        height: 500px;
+        left: -59px; }
+        .campaign_organizers .shape1 img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain; } }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .campaign_organizers .shape1 {
+        width: 300px;
+        height: 300px;
+        left: -59px; }
+        .campaign_organizers .shape1 img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain; } }
+  .campaign_organizers .shape2 {
+    position: absolute;
+    right: 0px;
+    top: 15%; }
+    @media only screen and (max-width: 991px) {
+      .campaign_organizers .shape2 {
+        width: 306px;
+        height: 501px; }
+        .campaign_organizers .shape2 img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain; } }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .campaign_organizers .shape2 {
+        width: 300px;
+        height: 300px; }
+        .campaign_organizers .shape2 img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain; } }
+  .campaign_organizers .shape3 {
+    position: absolute;
+    left: 0px;
+    top: 60%; }
+    @media only screen and (max-width: 991px) {
+      .campaign_organizers .shape3 {
+        width: 400px;
+        height: 500px;
+        left: -59px; }
+        .campaign_organizers .shape3 img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain; } }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .campaign_organizers .shape3 {
+        width: 300px;
+        height: 300px;
+        left: -59px; }
+        .campaign_organizers .shape3 img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain; } }
+  .campaign_organizers .shape4 {
+    position: absolute;
+    right: 0px;
+    bottom: 0px; }
+    @media only screen and (max-width: 991px) {
+      .campaign_organizers .shape4 {
+        width: 306px;
+        height: 501px; }
+        .campaign_organizers .shape4 img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain; } }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .campaign_organizers .shape4 {
+        width: 300px;
+        height: 300px; }
+        .campaign_organizers .shape4 img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain; } }
   @media only screen and (min-width: 1025px) and (max-width: 1280px) {
     .campaign_organizers {
       padding-top: 120px; } }
@@ -728,7 +827,9 @@ p {
   .campaign_organizers .image_area {
     max-width: 580px;
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    position: relative;
+    z-index: 10; }
     .campaign_organizers .image_area img {
       width: 100%;
       height: 100%;
@@ -887,6 +988,34 @@ p {
 
 .tk_sign_up_area {
   margin-top: 150px; }
+  .tk_sign_up_area .shape1 {
+    position: absolute;
+    top: 0px;
+    left: 0px; }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .tk_sign_up_area .shape1 {
+        width: 148px;
+        height: 217px; }
+        .tk_sign_up_area .shape1 img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain; } }
+  .tk_sign_up_area .shape2 {
+    position: absolute;
+    bottom: 0px;
+    right: 0px; }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .tk_sign_up_area .shape2 {
+        width: 148px;
+        height: 217px; }
+        .tk_sign_up_area .shape2 img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain; } }
+    .tk_sign_up_area .shape2 .child_shape {
+      position: absolute;
+      bottom: 0px;
+      right: 0px; }
   .tk_sign_up_area .tk_sign_up {
     border: 1px solid rgba(0, 0, 0, 0.36);
     border-radius: 40px;

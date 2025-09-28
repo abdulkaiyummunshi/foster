@@ -140,6 +140,39 @@
 
 .tk_sign_up_area{
     margin-top: 150px;
+    .shape1{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        @include sm{
+                  width: 148px;
+        height: 217px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+    .shape2{
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        @include sm{
+                  width: 148px;
+        height: 217px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        .child_shape{
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+        }
+    }
     .tk_sign_up{
         border: 1px solid rgba(0, 0, 0, 0.36);
         border-radius: 40px;
