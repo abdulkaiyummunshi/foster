@@ -9,6 +9,9 @@
             color: #000;
             position: relative;
             padding-bottom: 20px;
+            @include sm{
+                padding-bottom: 10px;
+            }
             &::after{
                 content: "";
                 border-radius: 10px;

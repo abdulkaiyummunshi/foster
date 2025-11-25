@@ -1,6 +1,11 @@
 .campaign_organizers{
     background: #fefcf7;
     position: relative;
+    .description{
+        p{
+            margin-top: 0px;
+        }
+    }
     .shape1{
         position: absolute;
         left: 0px;
@@ -102,6 +107,22 @@
         }
     }
     padding-top: 150px;
+    &.style_tk_01{
+        padding-top: 180px;
+        @include nesthubmax{
+            padding-top: 120px;
+        }
+        @include nesthub{
+            padding-top: 110px;
+        }
+        @include md{
+            padding-top: 90px;
+        }
+        @include sm{
+            padding-top: 40px;
+        }
+
+    }
     @include nesthubmax{
         padding-top: 120px;
     }
@@ -112,12 +133,13 @@
         padding-top: 90px;
     }
     @include sm{
-        padding-top: 75px;
+        padding-top: 40px;
     }
+
     background: #fefcf7;
     .row{
         &.style_1{
-            padding-top: 58px;
+            padding-top: 63px;
             @include md{
                 gap: 30px;
                 margin-bottom: 20px;
@@ -129,6 +151,9 @@
             }
             
         }
+        @include md{
+            gap: 30px;
+        }
     }
     .image_area{
         max-width: 580px;
@@ -136,6 +161,14 @@
         height: 100%;
         position: relative;
         z-index: 10;
+        &.style_tk_1{
+            max-width: 506px !important;
+        }
+        &.style_tk_notshadow{
+            img{
+                box-shadow: none !important;
+            }
+        }
         img{
             width: 100%;
             height: 100%;
@@ -152,6 +185,100 @@
             @include sm{
                 padding-left: 0px;
             }
+        }
+    }
+    .campaign_stands_content{
+        &.tk_style_01{
+            padding-left: 83px;
+            @include md{
+                padding-left: 0px;
+
+            }
+        }
+        .heading{
+            &.style_001{
+                margin-top: 38px;
+                @include sm{
+                    margin-top: 20px;
+                }
+            }
+            h2{
+                font-weight: 700;
+                font-size: 22px;
+                color: #000;
+            }
+            h3{
+                font-weight: 700;
+                font-size: 16px;
+                color: #000;
+            }
+        }
+        p{
+            font-weight: 400;
+            font-size: 16px;
+            color: #000;
+            line-height: 20px;
+        }
+    }
+    .tk_thank_your_content{
+        margin-top: 40px;
+        @include sm{
+            margin-top: 20px;
+        }
+        h5{
+            font-weight: 700;
+            font-size: 16px;
+            color: #000;
+        }
+        p{
+            font-weight: 400;
+            font-size: 16px;
+            color: #000;
+            line-height: 22px;
+        }
+        code{
+            font-weight: 400;
+            font-size: 16px;
+            color: #000;
+            line-height: 22px;
+        }
+    }
+}
+
+.tk_beneficiary_verification{
+    background: #fefcf7;
+    padding-top: 128px;
+    @include sm{
+        padding-top: 70px;
+    }
+    .heading{
+        h2{
+            font-weight: 700;
+            font-size: 22px;
+            color: #000;
+        }
+    }
+    .tk_beneficiary_content{
+        
+        p{
+            font-weight: 400;
+            font-size: 16px;
+            color: #000;
+            line-height: 20px
+        };
+    }
+    .tk_beneficiary_img{
+        width: 470px;
+        height: 470px;
+        @include sm{
+            margin-top: 30px;
+            width: 100%;
+            height: 335px;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     }
 }

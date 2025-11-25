@@ -1,7 +1,22 @@
 .support_area{
-    margin-top: 150px;
+    padding-top: 150px;
     padding-bottom: 69px;
+    @include nesthub{
+        padding-top: 110px;
+    }
+    @include nesthub{
+        padding-top: 100px;
+    }
+    @include md{
+        padding-top: 90px;
+    }
+    @include sm{
+        padding-top: 70px;
+    }
     background: #fefcf7;
+    &.style_01{
+        padding-top: 0px !important;
+    }
     .support_sidebar{
         padding-top: 60px;
         @include md{
@@ -15,13 +30,14 @@
             font-size: 30px;
             color: #000;
         }
-        ul{
+        ol{
             margin-top: 20px;
             li{
                 font-weight: 700;
                 font-size: 18px;
                 color: #000;
                 margin-bottom: 10px;
+                list-style-type: decimal;
             }
         }
     }
@@ -31,6 +47,14 @@
         width: 100%;
         height: 100%;
         padding: 66px 43px 50px 84px;
+        &.style_1{
+            padding: 57px 75px;
+            margin-top: 47px;
+            @include sm{
+                margin-top: 30px;
+                padding: 20px !important;
+            }
+        }
         @include nesthubmax{
             padding: 50px;
         }
@@ -57,15 +81,26 @@
         }
     }
     .sub_title{
+        margin-bottom: 31px;
+        @include sm{
+            margin-bottom: 18px;
+        }
         h4{
             font-weight: 700;
-            font-size: 24px;
+            font-size: 36px;
+            @include sm{
+                font-size: 22px;
+            }
             color: #000;
         }
     }
     .faq_container {
     max-width: 800px;
     margin: 50px auto;
+    &.style_1{
+        max-width: 100% !important;
+        margin: 0px !important;
+    }
     @include nesthub{
         margin: 30px 0px;
     }
@@ -86,7 +121,8 @@
             padding: 30px ;
         }
         @include sm{
-            padding: 20px;
+            padding: 18px;
+            margin-bottom: 20px;
         }
 
         .faq_question {
@@ -100,7 +136,7 @@
             font-weight: 700;
             font-size: 22px;
             @include sm{
-                font-size: 18px;
+                font-size: 15px;
             }
             color: #000;
 
@@ -120,10 +156,31 @@
             max-height: 0;
             overflow: hidden;
             transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+            &.style_tk_1{
+                h5{
+                    font-weight: 700;
+                    font-size: 16px;
+                    color: #000;
+                }
+                ul{
+                    padding-left: 20px;
+                    li{
+                        list-style-type: disc;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: #000;
+                    }
+                }
+            }
             ul{
                 li{
                     font-weight: 400;
                     font-size: 16px;
+
+                    @include sm{
+                        font-size: 14px;
+                    }
                     color: #000;
                 }
             }
@@ -136,9 +193,228 @@
         }
 
         .faq_answer.expanded {
-            max-height: 500px; 
+            max-height: 1000px; 
             padding-top: 20px;
         }
     }
 }
+}
+.privacy_area_tk{
+    .faq_answer{
+        h5{
+            font-weight: 700;
+            font-size: 16px;
+            color: #000;
+        }
+        p{
+            font-weight: 400;
+            font-size: 16px;
+            color: #000;
+        }
+        ul{
+            list-style-type: disc !important;
+            li{
+                @include flex(row, flex-start, center);
+                gap: 10px;
+                margin-bottom: 5px;
+                padding-left: 25px;
+                position: relative;
+                &::after{
+                    content: "";
+                    width: 5px;
+                    height: 5px;
+                    background-color: #000;
+                    @include border-radius(50%);
+                    position: absolute;
+                    top: 8px;
+                    left: 10px;
+                }
+            }
+        }
+    }
+    .sub_title{
+        h2{
+
+            font-weight: 700 !important;
+            font-size: 36px !important;
+            color: #000 !important;
+        }
+    }
+}
+.sub_title{
+    &.style_01{
+        h4{
+            font-size: 24px;
+        }
+    }
+}
+.support_content_area{
+    .sub_title{
+        margin-bottom: 25px !important;
+    }
+    .faq_container{ 
+        margin: 0px !important;
+    }
+}
+
+.campaign_success_area{
+    background: #fefcf7;
+    padding-top: 146px;
+    @include nesthub{
+        padding-top: 100px;
+    }
+    @include md{
+        padding-top: 80px;
+    }
+    @include sm{
+        padding-top: 73px;
+    }
+    .row{
+        &.style_1{
+            margin-top: 106px;
+            @include md{
+                margin-top: 50px;
+            }
+            @include sm{
+                margin-top: 40px;
+            }
+            .col-lg-6{
+                &.order-1{
+                    padding-left: 104px;
+                }
+            }
+        }
+    }
+    .tk_set_realistic_card{
+        border: 1px solid rgba(0, 0, 0, 0.36);
+        border-radius: 40px;
+        max-width: 520px;
+        width: 100%;
+        padding: 42px 36px 50px 50px;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.4);
+        background: #fff;
+        @include md{
+            margin-top: 40px;
+        }
+        @include sm{
+            padding: 20px;
+            @include border-radius(20px);
+            margin-top: 30px;
+        }
+        h4{
+            font-family: var(--font-family);
+            font-weight: 700;
+            font-size: 16px;
+            color: #fab23a;
+            margin-bottom: 18px;
+            text-align: center;
+        }
+        h6{
+            font-weight: 700;
+            font-size: 16px;
+            color: #fab23a;
+        }
+        h3{
+            font-weight: 700;
+            font-size: 26px;
+            color: #fab23a;
+        }
+        .tk_calculate_total{
+            p{
+                font-weight: 500;
+                font-size: 16px;
+                color: #000;
+            }
+        }
+        ul{
+            li{
+                @include flex(row, space-between, center);
+                margin-bottom: 10px;
+                &:last-child{
+                    padding-top: 10px;
+                    border-top: 1px solid #000;
+                }
+                p{
+                    font-weight: 700;
+                    font-size: 16px;
+                    color: #000;
+
+                }
+            }
+        }
+    }
+    .tk_cal_description{
+        p{
+            font-weight: 400;
+            font-size: 16px;
+            color: rgba(0, 0, 0, 0.5);
+            margin-top: 18px;
+        }
+    }
+    .choose_powerful{
+        @include flex(column, center, center);
+        gap: 40px;
+        .choose_card{
+            border: 1px solid #c5c5c5;
+            width: fit-content;
+            padding: 39px 35px;
+            background: #fff;
+            position: relative;
+            .line{
+                position: absolute;
+                bottom: -32px;
+                left: 50%;
+                @include transformX(-50%);
+            }
+
+        }
+        h4{
+            font-weight: 700;
+            font-size: 20px;
+            color: #000;
+        }
+    }
+    .heading{
+        margin-bottom: 42px;
+        h2{
+            font-weight: 700;
+            font-size: 22px;
+            color: #000;
+        }
+    }
+}
+
+.tk_writing_tips_area{
+    padding-top: 169px;
+    background: #fefcf7;
+    .tk_writing_wrapper{
+        background-color: #fff;
+         border: 1px solid #c5c5c5;
+         max-width: 760px;
+         margin: auto;
+         margin-top: 43px;
+
+    }
+    .tk_writing{
+        h4{
+            font-weight: 700;
+            font-size: 36px;
+            color: #fff;
+            &.style_1{
+                color: #fab23a;
+            }
+        }
+        p{
+            font-weight: 500;
+            font-size: 16px;
+            color: #000;
+        }
+        padding: 70px 2px 70px 35px;
+        background: #fab23a;
+        &.style_1{
+            padding: 70px 29px 70px 20px;
+            // border: 1px solid #c5c5c5;
+            background: #fff;
+        }
+    }
 }
