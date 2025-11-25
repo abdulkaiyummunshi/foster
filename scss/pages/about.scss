@@ -271,6 +271,21 @@
             padding-top: 49px !important;
 
         }
+        //rb_css
+        &.style_2 {
+            padding: 73px 25px 80px 34px;
+            h3 {
+                color: #FAB23A;
+                font-family: Inter;
+                font-weight: 700;
+                font-style: Bold;
+                font-size: 26px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                padding-bottom: 18px;
+            }
+
+        }
         @include nesthub{
             padding: 73px 15px 20px 15px;
         }
