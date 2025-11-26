@@ -303,6 +303,9 @@
   justify-content: center;
   align-items: center;
 }
+.why_fosterer_stands .fosterr_card.style_1 {
+  height: 287px;
+}
 .why_fosterer_stands .fosterer_stands_card {
   border: 1px solid #c5c5c5;
   max-width: 407px;
@@ -473,4 +476,51 @@
 .rb_realistic_card .rb_goal_list.style_1 .rb_desc {
   color: #000000;
   font-weight: 500;
+}
+
+.rb_writting_tips_card {
+  width: 740px;
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .rb_writting_tips_card {
+    flex-direction: column;
+  }
+}
+.rb_writting_tips_card .left {
+  padding: 70px 40px;
+  background-color: #FAB23A;
+}
+.rb_writting_tips_card .left h3 {
+  color: #FFFFFF;
+  font-family: Inter;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.rb_writting_tips_card .right {
+  padding: 70px 40px;
+  background-color: #FFFFFF;
+  border: 1px solid #C5C5C5;
+}
+.rb_writting_tips_card .right h3 {
+  color: #FAB23A;
+  font-family: Inter;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.rb_writting_tips_card ul li {
+  color: #000000;
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
 }/*# sourceMappingURL=about.css.map */
