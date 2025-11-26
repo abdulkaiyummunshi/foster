@@ -259,6 +259,7 @@
     .fosterr_card{
         height: 100%;
         @include flex(row, center, center);
+        //rb_css
         &.style_1 {
             height: 287px;
         }
@@ -814,39 +815,38 @@
         }
     }
 }
+.rb_choose_card {
+    .rb_title {
+        color: #000000;
+        font-family: Inter;
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 22px;
+        line-height: 100%;
+        letter-spacing: 0%;
 
-    .rb_choose_card {
-        .rb_title {
-            color: #000000;
-            font-family: Inter;
-            font-weight: 700;
-            font-style: Bold;
-            font-size: 22px;
-            line-height: 100%;
-            letter-spacing: 0%;
-
-        }
-        .rb_item {
-            background-color: #FFFFFF;
-            display: flex;
-            align-items: center;
-            justify-content: center;            
-            width: 422px;
-            height: 102px;
-            border: 1px solid #C5C5C5;
-            color: #000000;
-            font-family: Inter;
-            font-weight: 700;
-            font-style: Bold;
-            font-size: 20px;
-            line-height: 100%;
-            letter-spacing: 0%;
-            margin-top: 40px;
-            @include sm {
-                width: 100%;
-                padding: 20px;
-                font-size: 16px;
-            }
-
-        }
     }
+    .rb_item {
+        background-color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;            
+        width: 422px;
+        height: 102px;
+        border: 1px solid #C5C5C5;
+        color: #000000;
+        font-family: Inter;
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 20px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        margin-top: 40px;
+        @include sm {
+            width: 100%;
+            padding: 20px;
+            font-size: 16px;
+        }
+
+    }
+}

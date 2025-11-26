@@ -70,4 +70,26 @@
             text-align: left;
         }
     }
+    //rb_css
+    &.style_2{
+        .heading {
+            h2{
+                font-size: 22px;
+                @include sm{
+                    font-size: 20px;
+                }
+                &::after{
+                content: "";
+                background: none;                
+            }
+                padding-bottom: 15px;    
+            }
+
+        }
+        .description {
+            p {
+                text-align: left;
+            }
+        }
+    }
 }
