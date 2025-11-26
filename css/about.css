@@ -420,4 +420,57 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.rb_realistic_card {
+  background: #FFFFFF;
+  border-radius: 40px;
+  margin: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.3607843137);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.4);
+  max-width: 520px;
+}
+.rb_realistic_card h6 {
+  color: #FAB23A;
+  font-family: Inter;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.rb_realistic_card .rb_goal_list span {
+  color: #000000;
+  font-family: Inter;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.rb_realistic_card .rb_goal_list .price {
+  color: #000000;
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.rb_realistic_card .rb_goal_list hr {
+  margin: 10px 0;
+  border: 1px solid #000000;
+}
+.rb_realistic_card .rb_goal_list .rb_desc {
+  color: rgba(0, 0, 0, 0.5019607843);
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.rb_realistic_card .rb_goal_list.style_1 .rb_desc {
+  color: #000000;
+  font-weight: 500;
 }/*# sourceMappingURL=about.css.map */

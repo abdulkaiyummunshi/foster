@@ -706,3 +706,62 @@
 //         }
 //     }
 // }
+
+//rb_css
+.rb_realistic_card {
+    background: #FFFFFF;
+    border-radius: 40px;
+    margin: 10px;
+    border: 1px solid #0000005C;
+    box-shadow: 0px 4px 4px 0px #00000066;
+    max-width: 520px;
+    h6 {
+        color: #FAB23A;
+        font-family: Inter;
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+    }
+    .rb_goal_list {
+        span {
+            color: #000000;
+            font-family: Inter;
+            font-weight: 700;
+            font-style: Bold;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0%;
+        }
+        .price {
+            color: #000000;
+            font-family: Inter;
+            font-weight: 500;
+            font-style: Bold;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0%;
+        }
+        hr {
+            margin: 10px 0;
+            border: 1px solid #000000
+        }
+        .rb_desc {
+            color: #00000080;
+            font-family: Inter;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0%;
+        }
+        &.style_1 {
+            .rb_desc {
+                color: #000000;
+                font-weight: 500;
+            }
+        }
+    }
+
+}
