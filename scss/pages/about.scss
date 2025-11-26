@@ -286,6 +286,24 @@
             }
 
         }
+        &.style_3 {
+            h3 {
+                color: #FAB23A;
+                font-family: Inter;
+                font-weight: 700;
+                font-style: Bold;
+                font-size: 26px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                padding-bottom: 18px;
+            }
+            ul {
+                li {
+                    font-size: 14.4px;
+                }
+            }
+
+        }
         @include nesthub{
             padding: 73px 15px 20px 15px;
         }

@@ -47,6 +47,15 @@
             color: #000;
             margin-top: 10px;
         }
+        //rb_css
+        &.style_1 {
+            p {
+                font-weight: 500;
+                span {
+                    font-weight: 700;
+                }
+            }
+        }
     }
     &.style_1{
         h2{
